@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant - Menu</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+
+<div class="app">
+
+  <aside class="sidebar">
+    <div class="restaurant-logo">
+      <div class="logo-circle">🍔</div>
+      <h3>Your Restaurant Menu</h3>
+      <p>Your Slogan</p>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>Quick Links</h3>
+      <ol>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="menu.html">Your Orders</a></li>
+        <li><a href="#">Wallet</a></li>
+        <li><a href="#">Profile</a></li>
+        <li><a href="#">Logout</a></li>
+      </ol>
+    </div>
+
+    <div class="sidebar-section">
+      <h3>More About Us</h3>
+      <ol>
+        <li><a href="#">Our blog</a></li>
+        <li><a href="#">Upcoming Dishes</a></li>
+        <li><a href="#">Our Story</a></li>
+        <li><a href="#">Social Media Links</a></li>
+      </ol>
+    </div>
+  </aside>
+
+  <main class="main-content">
+
+    <header class="topbar">
+      <input type="text" id="searchInput"
+        placeholder="🔍 Search Food Item">
+
+      <div class="header-buttons">
+        <button class="auth-btn">Signup</button>
+        <button class="auth-btn">Login</button>
+        <span class="user-icon">👨🏻‍🍳</span>
+      </div>
+    </header>
+
+    <h3 class="menu-title">Menu</h3>
+
+    <section class="food-grid" id="foodContainer">
+      <p>Loading food items...</p>
+    </section>
+
+    <section class="checkout-section">
+      <h3>Your Cart</h3>
+
+      <p>Items added: <span id="cartCount">0</span></p>
+      <p>Total: $<span id="cartTotal">0.00</span></p>
+
+      <button id="placeOrderBtn" class="place-order-btn">
+        Place Order
+      </button>
+
+      <p id="orderMessage"></p>
+    </section>
+
+  </main>
+</div>
+
+</body>
+</html>
